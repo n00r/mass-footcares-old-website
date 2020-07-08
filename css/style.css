@@ -1,0 +1,89 @@
+* { margin: 0; padding: 0; outline: 0; }
+
+html, body { height: 100%; }
+
+body {
+    font-size: 12px;
+    line-height: 22px;
+    font-family: arial, sans-serif;
+    color: #5c5c5c;
+    background: #D5EAFF;
+	background-color:#D5EAFF;
+    min-width: 951px;
+}
+
+a { color: #246298; text-decoration: none; cursor: pointer; }
+a:hover { text-decoration: underline; }
+a img { border: 0; }
+
+input, textarea, select { font-size: 12px; font-family: arial, sans-serif; }
+textarea { overflow: auto; }
+
+.cl { display: block; height: 0; font-size: 0; line-height: 0; text-indent: -4000px; clear: both; }
+.notext { font-size: 0; line-height: 0; text-indent: -4000px; }
+.left, .alignleft { float: left; display: inline; }
+.right, .alignright { float: right; display: inline; }
+
+#wrapper { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -52px; }
+
+.shell { width: 951px; margin: 0 auto; }
+
+#header  { height: 66px; background: url(images/header.png) repeat-x 0 0; }
+#header .left { padding: 21px 0 0 6px; }
+
+#logo { display: inline; width: 219px; font-size: 0; line-height: 0; }
+#logo a { display: block; width: 219px; height: 14px; background: url(images/logo.png) no-repeat 0 0; text-indent: -4000px; }
+
+#navigation { display: inline; float: right; }
+#navigation ul li { display: inline; float: left; list-style: none; font-family: 'Trebuchet MS', arial, sans-serif; font-size: 14px; line-height: 66px; text-transform: uppercase; background: url(images/nav-sep.png) no-repeat right 0; padding: 0 1px; }
+#navigation ul li.first a { background: url(images/nav-first.png) no-repeat 0 0; }
+#navigation ul li a { float: left; color: #515151; padding: 3px 15px 0; margin-right: 1px; height: 62px; background: url(images/nav-item.png) repeat-x 0 -4000px; }
+#navigation ul li a:hover { background-position: 0 0; text-decoration: none; color: #fff; }
+#navigation ul li.first a:hover { background-position: 0 -71px; }
+
+#slider-holder { padding-top: 1px; height: 462px; background: url(images/slider-holder.png) repeat-x 0 0; }
+
+#main { padding-top: 49px; background: url(images/main.png) repeat-x 0 0; }
+
+h2 { padding-bottom: 17px; font-family: 'Trebuchet MS', arial, sans-serif; font-size: 22px; line-height: 26px; color: #000; }
+
+#content { padding: 0 0 46px 6px; }
+#content .last { padding-right: 0; }
+
+.post { display: inline; float: left; padding: 0 21px 37px 0; width: 298px; }
+.post a { text-decoration: underline; }
+.post a:hover { text-decoration: none; }
+.post .img-frame { margin-bottom: 20px; width: 296px; background: #fff; }
+.post .img-frame img { display: block; }
+.post .img-frame .top { background: url(images/img-frame-top.png) no-repeat 0 0; }
+.post .img-frame .bottom { padding: 5px; background: url(images/img-frame-bottom.png) no-repeat 0 bottom; }
+
+.quote-post { position: relative; width: 945px; }
+.quote-post p { font-family: Georgia, 'Times new roman', serif; font-size: 14px; font-style: italic; line-height: 24px; }
+.quote-post p.signature { position: absolute; top: 101px; right: 3px; width: 100%; text-align: right; font-family: Arial, helvetica, serif; font-size: 12px; line-height: 22px; font-style: normal; }
+.quote-post img.quoutes { padding: 0 8px 4px 0; }
+
+.quote-post .top { padding-top: 5px; background: url(images/quote-top.png) no-repeat 0 0; }
+.quote-post .middle { position: relative; background: url(images/quote-middle.png) repeat-y 0 0; }
+.quote-post .bottom { padding: 8px 40px 31px 27px; background: url(images/quote-bottom.png) no-repeat 0 bottom; }
+
+.widgets { padding: 0 0 46px 5px; }
+.col { display: inline; float: left; width: 450px; }
+.col ul { padding: 2px 0 0 15px; color: #246298; list-style: square; }
+
+.about-us { padding-right: 45px; }
+.about-us h2 { padding: 0 0 13px 36px; background: url(images/about-us.png) no-repeat 0 0; }
+
+.activities h2 { padding: 0 0 13px 41px; background: url(images/activites.png) no-repeat 0 3px; }
+
+#footer-push { height: 52px; }
+
+#footer { padding-top: 14px; height: 38px; background: url(images/footer.png) repeat-x 0 0; }
+#footer p.copy { display: inline; float: right; padding-right: 1px; font-family: 'Trebuchet MS', arial, sans-serif; line-height: 17px; color: #7a9ebd; }
+#footer p.copy span { color: #294c6b; padding: 0 10px 0 7px;  }
+#footer p.copy a { color: #a7d6ff; text-decoration: underline; }
+#footer p.copy a:hover { text-decoration: none; }
+
+#bottom-nav { padding-left: 4px; font-family: 'Trebuchet MS', arial, sans-serif; font-size: 11px; line-height: 18px; color: #294c6b; text-transform: uppercase; }
+#bottom-nav a { color: #638db2; }
+#bottom-nav span { padding: 0 8px 0 8px; }

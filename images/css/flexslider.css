@@ -1,0 +1,66 @@
+/*
+ * jQuery FlexSlider v1.8
+ * http://flex.madebymufffin.com
+ *
+ * Copyright 2011, Tyler Smith
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider { width: 100%; height: 300px; background-color:#0091d5; }
+.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {  position: relative; background: url(images/slider.png) no-repeat right 0;  }
+.flexslider .slides {zoom: 1; padding-top: 0px; }
+.flexslider .slides > li {position: relative;}
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.flex-container {zoom: 1; position: relative;}
+
+/* Caption style */
+/* IE rgba() hack */
+.flex-caption { display: inline; float: left; padding-top: 30px; width: 500px; }
+.flex-caption p.first-line { padding: 0px 0px 0px 26px; font-family: 'Trebuchet MS', arial, sans-serif; font-size: 40px; line-height: 30px; font-weight: bold; color: #fff; text-shadow: 0 1px #0c2a43; }
+.flex-caption p.second-line { padding: 0px 0px 0px 46px; font-size: 50px; line-height: 66px; font-weight: bold; color: #afff00; text-shadow: 0 -1px #040810; }
+.flex-caption p.third-line { padding: 0px 0px 0px 26px; font-size: 50px; line-height: 50px; color: #4386b2; font-weight: bold; text-shadow: 0 1px #05223b; }
+.flex-caption p.fourth-line { padding: 0px 0px 0px 46px; font-size: 30px; line-height: 55px; color: #0F0;font-family:Tahoma, Geneva, sans-serif;font-weight:bold; text-shadow: 0 1px #6C0; }
+.flex-caption p.third-line sup { font-size: 42px; }
+.flex-caption span { font-family: 'Trebuchet MS', arial, sans-serif; font-size: 15px; color: #fff; font-weight: bold; line-height: 22px; padding: 0px 0px 0px 306px;}
+.flex-caption span a { color: #fff; text-decoration: underline; }
+.flex-caption a.view-more:hover { text-decoration: none; }
+
+/* Direction Nav 
+.flex-direction-nav li a { display: block; position: absolute; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav li .next { width: 34px; height: 35px; bottom: 1px; background: url(images/slider-arrows.png) no-repeat -40px 0; right: 0; }
+.flex-direction-nav li .prev { width: 40px; height: 37px; bottom: -1px; background: url(images/slider-arrows.png) no-repeat 0 0; left: 40%; }*/
+
+/* Control Nav */
+.flex-control-nav { width: 100%; position: absolute; bottom: 1px; text-align: center; } 
+.flex-control-nav li { display: inline-block; zoom: 1; *display: inline; font-family: 'Trebuchet MS', arial, sans-serif; font-size: 17px; font-weight: bold; background: url(images/slider-sep.png) no-repeat right 0; width: 39px; }
+.flex-control-nav li:first-child { margin: 0; }
+.flex-control-nav li a { display: inline; float: left; height: 35px; line-height: 35px; padding: 0 14px; color: #515151; background: url(images/slider-nav.png) repeat-x 0 0; }
+.flex-control-nav li a:hover { background-position: 0 -35px; text-decoration: none; }
+.flex-control-nav li a.active { background-position: 0 -35px; }
